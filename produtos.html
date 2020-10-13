@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos - Full Stack Games</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/produto.css">
+        
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/9626911983.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Inicio do cabecalho -->
+        <header>
+            <div id="cabecalho">
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/logo-FullStackGames.jpg" alt="FullStack Games">
+                    </a>
+                </div>
+                <nav id="menu">
+                    <ul>
+                        <li><a class="menu" href="index.html">Home</a></li>
+                        <li><a class="menu" href="produtos.html" id="selected">Produtos</a></li>
+                        <li><a class="menu" href="loja.html">Nossas Lojas</a></li>
+                        <li><a class="menu" href="Contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- /Fim do cabecalho -->
+
+        <main id="pagina-produto">
+            <h2>Produtos</h2>
+            <div class="flexbox">
+                <aside id="menu-lateral">
+                    <h3>Categorias</h3>
+                    <nav>
+                        <ul>
+                            <li onclick="exibirTodos()"><p><i class="far fa-caret-square-right"></i>Todos os produtos</p></li>
+                            <li onclick="exibirCategoria('playstation5')"><p><i class="far fa-caret-square-right"></i>PlayStation 5 (3)</p></li>
+                            <li onclick="exibirCategoria('nintendoSwitch')"><p><i class="far fa-caret-square-right"></i>Nintendo Switch (2)</p></li>
+                            <li onclick="exibirCategoria('xboxOne')"><p><i class="far fa-caret-square-right"></i>Xbox One (3)</p></li>
+                            <li onclick="exibirCategoria('pcGamer')"><p><i class="far fa-caret-square-right"></i>PC Gamer (2)</p></li>
+                            <li onclick="exibirCategoria('acessorios')"><p><i class="far fa-caret-square-right"></i>Acessórios (2)</p></li>
+                        </ul>
+                    </nav>
+                </aside>
+                <section id="produtos">
+                    <div class="boxProduto" id="playstation5">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/console-sony-playstation-5-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Console Sony PlayStation 5</p>
+                            <p class="valor-inteiro"><strike>R$ 4.999,00</strike></p>
+                            <p class="promocao">R$ 4.499,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="xboxOne">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/console-xbox-one-s-1tb-branco-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Console Xbox One S 1TB Branco</p>
+                            <p class="valor-inteiro"><strike>R$ 2.555,00</strike></p>
+                            <p class="promocao">R$ 2.299,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="nintendoSwitch">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/console-nintendo-switch-32gb-neon-gray-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Console Nintendo Switch 32Gb Neon Gray</p>
+                            <p class="valor-inteiro"><strike>R$ 4.889,00</strike></p>
+                            <p class="promocao">R$ 3.749,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="playstation5">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/game-marvel-s-spider-man-miles-morales-ps5-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Jogo Marvel´s Spider-Man: Miles Morales Playstation 5</p>
+                            <p class="valor-inteiro"><strike>R$ 249,00</strike></p>
+                            <p class="promocao">R$ 219,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="playstation5">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/game-demon-s-soul-s-ps5-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Jogo Demon´s Soul´s Playstation 5</p>
+                            <p class="valor-inteiro"><strike>R$ 349,00</strike></p>
+                            <p class="promocao">R$ 307,90</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="xboxOne">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/Game-Red-Dead-Redemption-2-Xbox-One-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Jogo Red Dead Redemption 2 Xbox One</p>
+                            <p class="valor-inteiro"><strike>R$ 349,00</strike></p>
+                            <p class="promocao">R$ 307,90</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="xboxOne">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/game-tom-clancy-s-ghost-recon-wildlands-xbox-one-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Jogo Tom Clancy´s Ghost Recon Wildlands Xbox One</p>
+                            <p class="valor-inteiro"><strike>R$ 199,00</strike></p>
+                            <p class="promocao">R$ 119,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="nintendoSwitch">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/Super-Mario-Odyssey-Nintendo-Switch-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Jogo Super Mario Odyssey Nintendo Switch</p>
+                            <p class="valor-inteiro"><strike>R$ 399,00</strike></p>
+                            <p class="promocao">R$ 319,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="pcGamer">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/computador-gamer-skul-intel-core-i9-9900kf-16gb-1tb-rtx-2060-super-8gb-linux-g9900kfw2t4801-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Computador Gamer Skul Intel Core i9-9900KF, 16GB, 1TB, RTX 2060 Super 8GB, Linux</p>
+                            <p class="valor-inteiro"><strike>R$ 13.684,00</strike></p>
+                            <p class="promocao">R$ 11.919,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="pcGamer">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/computador-gamer-3green-intel-core-i5-9400f-8gb-geforce-gtx-1660-6gb-linux-25888-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Computador Gamer 3Green Intel Core i5-9400F, 8GB, Geforce GTX 1660 6GB, Linux</p>
+                            <p class="valor-inteiro"><strike>R$ 5.263,00</strike></p>
+                            <p class="promocao">R$ 4.999,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="acessorios">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/Mouse-Gamer-Raze- Lancehead-Sem-Fio-16.000-DPI-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Mouse Gamer Razer Lancehead Sem Fio 16.000 DPI</p>
+                            <p class="valor-inteiro"><strike>R$ 981,00</strike></p>
+                            <p class="promocao">R$ 833,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="boxProduto" id="acessorios">
+                        <div class="imgProduto">
+                            <img src="img/img-pequena/Teclado-optico-Mecanico-Game- Razer-Huntsman-Switch-Razer-Purple-pequeno.jpg" onclick=destaque(this) onmouseover="aumentarImagem(this)" onmouseout="diminuirImagem(this)">
+                        </div>
+                        <div class="descricaoProduto">
+                            <p class="nome-produto">Teclado Óptico Mecânico Gamer Razer Huntsman, Switch Razer Purple</p>
+                            <p class="valor-inteiro"><strike>R$ 1.841,00</strike></p>
+                            <p class="promocao">R$ 1.564,00</p>
+                        </div>
+                        <div class="botaoProduto">
+                            <button>Detalhes</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+        <!-- /Fim corpo -->
+        <footer>
+            <p id="pagamento">Formas de pagamento:</p>
+            <img src="./img/formas-pagamento.png" alt="Formas de pagamento">
+            <p id="copy">&copy; Recode Pro</p>
+        </footer>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
