@@ -8,3 +8,6 @@ Nesta versão foi utilizada:
 - JavaScript
 
 para acessar o site clique aqui: https://andrem91.github.io/ProjetoFullStackGames/
+
+Autor: André Marques (@andrem91)
+@andrem91
