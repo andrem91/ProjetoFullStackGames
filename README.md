@@ -7,7 +7,7 @@ Nesta versão foi utilizada:
 - CSS
 - JavaScript
 
-para acessar o site clique aqui: https://andrem91.github.io/ProjetoFullStackGames/
+para acessar o site clique aqui: https://andrem91.github.io/ProjetoFullStackGamesV3/
 
 Autor: André Marques (@andrem91)
 @andrem91
